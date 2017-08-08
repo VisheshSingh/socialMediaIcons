@@ -9,11 +9,44 @@ ul{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 25px;
 }
 
 ul li{
     list-style: none;
-    display: inline-flex;
-    font-size: 50px;
-    margin-right:20px;
+}
+
+ul li a{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #f1f1f1;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+ul li a:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+ul li a .fa{
+    width:100%;
+    height: 100%;
+    display: block;
+    background: #ff0;
+    border-radius: 50%;
+    line-height: calc(60px - 30px);
+    font-size: 24px;
+    color: #262626;
+    transition: 0.5s;
 }
