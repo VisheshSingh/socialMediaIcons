@@ -30,6 +30,7 @@ ul li a{
     border-radius: 50%;
     padding: 16px;
     box-sizing: border-box;
+    background: linear-gradient(0deg, #ddd, #fff);
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
     text-decoration: none;
     transition: 0.5s;
@@ -46,7 +47,28 @@ ul li a .fa{
     background: #ff0;
     border-radius: 50%;
     line-height: calc(60px - 30px);
+    background: linear-gradient(0deg, #fff, #ddd);
     font-size: 24px;
     color: #262626;
     transition: 0.5s;
+}
+
+ul li:nth-child(1) a:hover .fa{
+    color:#3b5998;
+}
+
+ul li:nth-child(2) a:hover .fa{
+    color:#00b6f1;
+}
+
+ul li:nth-child(3) a:hover .fa{
+    color:#df4a32
+}
+
+ul li:nth-child(4) a:hover .fa{
+    color:#007bb6;
+}
+
+ul li:nth-child(5) a:hover .fa{
+    color:#c32aa3;
 }
